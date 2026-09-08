@@ -1,0 +1,16 @@
+import type {RawNote,Note,Chunk,Health,Fact,Answer} from './types';
+export const LIMITS: {notes:number;totalChars:number;noteChars:number;questionChars:number;chunkChars:number;topK:number};
+export function tokenize(text:string):string[];
+export function safePath(path:string):string;
+export function parseNote(raw:RawNote):Note;
+export function parseVault(raw:RawNote[]):Note[];
+export function chunkNotes(notes:Note[]):Chunk[];
+export function noteLinks(notes:Note[]):{source:string;target:string}[];
+export function extractFacts(notes:Note[]):Fact[];
+export function analyzeHealth(notes:Note[]):Health;
+export function eligibleNotes(notes:Note[],options?:{excluded?:string[];asOf?:string}):Note[];
+export function retrieve(notes:Note[],question:string,options?:{excluded?:string[];asOf?:string;topK?:number}):Chunk[];
+export function evidenceAnswer(notes:Note[],question:string,options?:{excluded?:string[];asOf?:string}):Answer;
+export function validateGenerated(raw:unknown,sources:Chunk[]):Pick<Answer,'claims'|'gaps'|'status'|'rejectedClaims'>;
+export function compareAnswers(before:Answer,after:Answer):{removed:Chunk[];added:Chunk[];retained:number;statusChanged:boolean};
+export function exportAnswer(answer:Answer):string;

@@ -1,0 +1,2 @@
+# Local Cloudflare/Vite development only. Copy to .dev.vars and add your own key.
+GEMINI_API_KEY=""

@@ -1,0 +1,22 @@
+[
+ {"id":"Q01","question":"What is the new launch date?","expected":["Release decision"]},
+ {"id":"Q02","question":"What was the original proposed launch date?","expected":["Launch brief"]},
+ {"id":"Q03","question":"What blocks the public launch?","expected":["Security review"]},
+ {"id":"Q04","question":"Who owns the security review?","expected":["Security review"]},
+ {"id":"Q05","question":"What did we observe at 250 concurrent users?","expected":["Load test report"]},
+ {"id":"Q06","question":"What is the error rate at 100 concurrent users?","expected":["Load test report"]},
+ {"id":"Q07","question":"How many teams were interviewed about onboarding?","expected":["Onboarding research"]},
+ {"id":"Q08","question":"Which teams needed help with date formatting?","expected":["Pilot feedback"]},
+ {"id":"Q09","question":"Why did we choose PostgreSQL?","expected":["Architecture decision"]},
+ {"id":"Q10","question":"How should failed import jobs be retried?","expected":["Architecture decision"]},
+ {"id":"Q11","question":"Who is the incident owner?","expected":["Incident playbook"]},
+ {"id":"Q12","question":"Should we delete evidence during an incident?","expected":["Incident playbook"]},
+ {"id":"Q13","question":"Does RAG train a model on uploaded documents?","expected":["RAG fundamentals"]},
+ {"id":"Q14","question":"How do we evaluate source ablation?","expected":["Evaluation checklist"]},
+ {"id":"Q15","question":"Are instructions in uploaded documents trusted?","expected":["Prompt boundaries"]},
+ {"id":"Q16","question":"Does an exact quote prove semantic entailment?","expected":["Prompt boundaries","RAG fundamentals"]},
+ {"id":"Q17","question":"Who won Wimbledon in 1977?","expected":[],"noMatch":true},
+ {"id":"Q18","question":"What temperature is Tokyo tomorrow?","expected":[],"noMatch":true},
+ {"id":"Q19","question":"What are the recorded revenue and retention metrics?","expected":["Pilot feedback","Onboarding research"],"note":"The retrieved evidence explicitly says these metrics were not measured; generation should not invent values."},
+ {"id":"Q20","question":"What does public go-live require?","expected":["Release decision","Security review"]}
+]

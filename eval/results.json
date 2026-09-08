@@ -1,0 +1,298 @@
+{
+  "generatedAt": "2026-09-08T13:12:42.497Z",
+  "scope": "20 hand-authored questions over a synthetic 12-note vault. Lexical retrieval only; not an independent benchmark or an LLM-quality score.",
+  "metric": "All expected note titles found among the top 8 passages (max 2 per note).",
+  "retrievalPassed": 18,
+  "retrievalTotal": 18,
+  "unrelatedQuestionsAbstained": 2,
+  "unrelatedQuestionsTotal": 2,
+  "liveModelEvaluation": "NOT RUN — no API credentials configured",
+  "results": [
+    {
+      "id": "Q01",
+      "question": "What is the new launch date?",
+      "expected": [
+        "Release decision"
+      ],
+      "retrieved": [
+        "Release decision",
+        "Launch brief",
+        "Open questions",
+        "Pilot feedback",
+        "Security review"
+      ],
+      "pass": true,
+      "ms": 9.83
+    },
+    {
+      "id": "Q02",
+      "question": "What was the original proposed launch date?",
+      "expected": [
+        "Launch brief"
+      ],
+      "retrieved": [
+        "Launch brief",
+        "Release decision",
+        "RAG fundamentals",
+        "Open questions",
+        "Pilot feedback",
+        "Security review"
+      ],
+      "pass": true,
+      "ms": 2.68
+    },
+    {
+      "id": "Q03",
+      "question": "What blocks the public launch?",
+      "expected": [
+        "Security review"
+      ],
+      "retrieved": [
+        "Launch brief",
+        "Release decision",
+        "Security review",
+        "Open questions"
+      ],
+      "pass": true,
+      "ms": 3.96
+    },
+    {
+      "id": "Q04",
+      "question": "Who owns the security review?",
+      "expected": [
+        "Security review"
+      ],
+      "retrieved": [
+        "Release decision",
+        "Launch brief",
+        "Load test report",
+        "Incident playbook",
+        "Pilot feedback",
+        "Architecture decision",
+        "Security review"
+      ],
+      "pass": true,
+      "ms": 20.33
+    },
+    {
+      "id": "Q05",
+      "question": "What did we observe at 250 concurrent users?",
+      "expected": [
+        "Load test report"
+      ],
+      "retrieved": [
+        "Load test report"
+      ],
+      "pass": true,
+      "ms": 4.78
+    },
+    {
+      "id": "Q06",
+      "question": "What is the error rate at 100 concurrent users?",
+      "expected": [
+        "Load test report"
+      ],
+      "retrieved": [
+        "Load test report"
+      ],
+      "pass": true,
+      "ms": 0.9
+    },
+    {
+      "id": "Q07",
+      "question": "How many teams were interviewed about onboarding?",
+      "expected": [
+        "Onboarding research"
+      ],
+      "retrieved": [
+        "Onboarding research",
+        "Pilot feedback",
+        "Launch brief",
+        "Release decision"
+      ],
+      "pass": true,
+      "ms": 0.61
+    },
+    {
+      "id": "Q08",
+      "question": "Which teams needed help with date formatting?",
+      "expected": [
+        "Pilot feedback"
+      ],
+      "retrieved": [
+        "Pilot feedback",
+        "Onboarding research",
+        "Prompt boundaries",
+        "Release decision",
+        "Launch brief"
+      ],
+      "pass": true,
+      "ms": 0.73
+    },
+    {
+      "id": "Q09",
+      "question": "Why did we choose PostgreSQL?",
+      "expected": [
+        "Architecture decision"
+      ],
+      "retrieved": [
+        "Architecture decision"
+      ],
+      "pass": true,
+      "ms": 2.35
+    },
+    {
+      "id": "Q10",
+      "question": "How should failed import jobs be retried?",
+      "expected": [
+        "Architecture decision"
+      ],
+      "retrieved": [
+        "Architecture decision",
+        "Onboarding research",
+        "Pilot feedback",
+        "Launch brief",
+        "Release decision"
+      ],
+      "pass": true,
+      "ms": 0.9
+    },
+    {
+      "id": "Q11",
+      "question": "Who is the incident owner?",
+      "expected": [
+        "Incident playbook"
+      ],
+      "retrieved": [
+        "Incident playbook",
+        "Launch brief",
+        "Load test report",
+        "Security review",
+        "Release decision"
+      ],
+      "pass": true,
+      "ms": 0.75
+    },
+    {
+      "id": "Q12",
+      "question": "Should we delete evidence during an incident?",
+      "expected": [
+        "Incident playbook"
+      ],
+      "retrieved": [
+        "Incident playbook",
+        "RAG fundamentals",
+        "Open questions",
+        "Evaluation checklist"
+      ],
+      "pass": true,
+      "ms": 1.05
+    },
+    {
+      "id": "Q13",
+      "question": "Does RAG train a model on uploaded documents?",
+      "expected": [
+        "RAG fundamentals"
+      ],
+      "retrieved": [
+        "RAG fundamentals",
+        "Prompt boundaries",
+        "Evaluation checklist"
+      ],
+      "pass": true,
+      "ms": 0.76
+    },
+    {
+      "id": "Q14",
+      "question": "How do we evaluate source ablation?",
+      "expected": [
+        "Evaluation checklist"
+      ],
+      "retrieved": [
+        "Evaluation checklist",
+        "Prompt boundaries",
+        "RAG fundamentals"
+      ],
+      "pass": true,
+      "ms": 0.56
+    },
+    {
+      "id": "Q15",
+      "question": "Are instructions in uploaded documents trusted?",
+      "expected": [
+        "Prompt boundaries"
+      ],
+      "retrieved": [
+        "Prompt boundaries",
+        "RAG fundamentals",
+        "Evaluation checklist"
+      ],
+      "pass": true,
+      "ms": 0.72
+    },
+    {
+      "id": "Q16",
+      "question": "Does an exact quote prove semantic entailment?",
+      "expected": [
+        "Prompt boundaries",
+        "RAG fundamentals"
+      ],
+      "retrieved": [
+        "Prompt boundaries",
+        "RAG fundamentals",
+        "Evaluation checklist"
+      ],
+      "pass": true,
+      "ms": 1.13
+    },
+    {
+      "id": "Q17",
+      "question": "Who won Wimbledon in 1977?",
+      "expected": [],
+      "retrieved": [],
+      "pass": true,
+      "ms": 0.51
+    },
+    {
+      "id": "Q18",
+      "question": "What temperature is Tokyo tomorrow?",
+      "expected": [],
+      "retrieved": [],
+      "pass": true,
+      "ms": 0.31
+    },
+    {
+      "id": "Q19",
+      "question": "What are the recorded revenue and retention metrics?",
+      "expected": [
+        "Pilot feedback",
+        "Onboarding research"
+      ],
+      "retrieved": [
+        "Open questions",
+        "Pilot feedback",
+        "Security review",
+        "Onboarding research"
+      ],
+      "pass": true,
+      "ms": 0.51,
+      "note": "The retrieved evidence explicitly says these metrics were not measured; generation should not invent values."
+    },
+    {
+      "id": "Q20",
+      "question": "What does public go-live require?",
+      "expected": [
+        "Release decision",
+        "Security review"
+      ],
+      "retrieved": [
+        "Release decision",
+        "Open questions",
+        "Security review",
+        "Launch brief"
+      ],
+      "pass": true,
+      "ms": 0.63
+    }
+  ]
+}
