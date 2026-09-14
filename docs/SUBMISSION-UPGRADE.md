@@ -22,7 +22,7 @@ It is a portable evidence snapshot, not a full replay package, signed audit log,
 - Retrieval evaluation exits unsuccessfully if any case fails.
 
 ## Verification and deployment
-The new pure JavaScript behavior was exercised in the available JavaScript execution environment. Full React/TypeScript compilation and browser interaction were not run in that environment. Run the commands below in a development checkout before deployment:
+Verified on 2026-09-14 using Node 22.23.2: TypeScript checks, production build, all 43 Node tests, and all 20 synthetic retrieval evaluation cases passed. Chromium interaction checks passed for all four tour steps, citation viewing, source exclusion, JSON download, dated view, review queue, and a 390px viewport overflow check. No page exceptions were observed. These browser checks used the local Vite server. Reproduce with:
 
 ```bash
 npm ci
@@ -33,4 +33,4 @@ npm run typecheck
 npm test
 ```
 
-Configure GEMINI_API_KEY as a deployment secret, then verify a real generated answer and an unavailable-information question. No live Gemini call or redeployment was performed for this upgrade. A GitHub commit does not prove the existing hosted demo has been updated.
+Configure GEMINI_API_KEY as a deployment secret, then verify a real generated answer and an unavailable-information question. Live Gemini generation remains unverified because no credential is configured. A GitHub commit does not prove the existing hosted demo has been updated.
