@@ -1,0 +1,2 @@
+import type {Answer} from './types';
+export function evidenceRecord(answer:Answer): {schemaVersion:number;question:string;mode:Answer['mode'];status:Answer['status'];view:{asOf:string|null;excludedNoteIds:string[]};retrieval:string;model:string|null;claims:Answer['claims'];sources:Array<Pick<Answer['sources'][number],'id'|'noteId'|'path'|'title'|'heading'|'date'|'startLine'|'endLine'|'text'>>;gaps:string[];warning:string|null;limits:string};

@@ -6,3 +6,6 @@ const results=cases.map(c=>{const start=performance.now(),sources=retrieve(notes
 const sourceCases=results.filter(r=>r.expected.length),negative=results.filter(r=>!r.expected.length);
 const report={generatedAt:new Date().toISOString(),scope:'20 hand-authored questions over a synthetic 12-note vault. Lexical retrieval only; not an independent benchmark or an LLM-quality score.',metric:'All expected note titles found among the top 8 passages (max 2 per note).',retrievalPassed:sourceCases.filter(r=>r.pass).length,retrievalTotal:sourceCases.length,unrelatedQuestionsAbstained:negative.filter(r=>r.pass).length,unrelatedQuestionsTotal:negative.length,liveModelEvaluation:'NOT RUN — no API credentials configured',results};
 fs.writeFileSync(new URL('../eval/results.json',import.meta.url),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));
+
+// A failed regression must fail CI as well as appear in the report.
+if(results.some(result=>!result.pass))process.exitCode=1;
