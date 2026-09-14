@@ -15,7 +15,8 @@
     "db:generate": "bash scripts/sites-env.sh -- drizzle-kit generate",
     "test:evidence": "node --test tests/vault.test.mjs",
     "typecheck": "tsc --noEmit",
-    "eval": "node scripts/evaluate.mjs"
+    "eval": "node scripts/evaluate.mjs",
+    "build:vercel": "next build --webpack"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",

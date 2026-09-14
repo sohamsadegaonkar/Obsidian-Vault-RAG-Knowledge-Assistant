@@ -1,4 +1,3 @@
-import { env } from 'cloudflare:workers';
 import { z } from 'zod';
 import { parseVault, evidenceAnswer, eligibleNotes, analyzeHealth } from '@/lib/vault-engine.mjs';
 import { generateAnswer, DEFAULT_MODEL } from '@/lib/gemini.mjs';
@@ -24,7 +23,7 @@ export async function POST(request:Request){
     const options={excluded:input.excluded,asOf:input.asOf};
     const base=evidenceAnswer(notes,input.question,options);
     if(input.mode==='evidence')return json(base);
-    const serverKey=(env as unknown as Record<string,string>).GEMINI_API_KEY||process.env.GEMINI_API_KEY;
+    const serverKey=process.env.GEMINI_API_KEY;
     const apiKey=input.apiKey?.trim()||serverKey;
     if(!apiKey)return json({error:'Connect a Gemini API key to generate an answer. Evidence mode works without one.',code:'MODEL_NOT_CONFIGURED'},503);
     const generated=await generateAnswer({notes,question:input.question,options,apiKey,model:input.model,semantic:input.semantic});
