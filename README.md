@@ -8,6 +8,12 @@ Built by Soham Sadegaonkar for the Generative AI Developer Intern build sprint.
 
 Most knowledge assistants stop at an answer with citations. VaultMind makes the evidence inspectable: remove a source, rerun the same question, and compare the supporting passages. It also surfaces explicit changes between dated notes and turns missing references into evidence requests.
 
+## Submission walkthrough
+
+Use **Start guided demo** in the sample workspace for four steps: source inspection, source exclusion, dated retrieval, and missing evidence. Expand **Evidence used for this answer** to inspect applied filters and download a JSON evidence record. The tour uses real evidence retrieval without a model key.
+
+See [upgrade details and validation steps](docs/SUBMISSION-UPGRADE.md). These repository changes require a fresh build and deployment before they appear on the live demo.
+
 ## Working features
 
 - Import a vault ZIP or multiple Markdown notes. Filenames, headings, tags, dates, original line numbers, and Obsidian links are retained.
